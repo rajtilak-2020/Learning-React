@@ -8,8 +8,10 @@ interface Props{
   onSelectItem: (item: string) => void;
 }
 
-function ListGroup({items, heading, onSelectItem}: Props) {
+function ListGroup({ items, heading, onSelectItem }: Props) {
 const [selectedIndex, setSelectedIndex] = useState(-1);
+
+  heading = "";
 
   return (
     <>
